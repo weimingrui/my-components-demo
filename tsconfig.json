@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
+    ],
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "@/*": ["./src/*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"],
+      "element-ui/lib/table": ["node_modules/element-ui/types/table"],
+      "element-ui/lib/table-column": ["node_modules/element-ui/types/table-column"]
+    },
+    "types": [
+      "@nuxt/types",
+      "./plugins/axios/types",
+      "./types/common/shims",
+      "./types/common/data",
+      "./types/common/http"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    ".nuxt-white-label"
+  ]
+}
